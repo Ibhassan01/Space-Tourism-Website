@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.planetCards_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.planetCards_contents{
+    margin-bottom: 4%;
+    padding-bottom: 4%;
+    overflow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.planetCards_title{
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 0.5mm;
+}
+span{
+    color: #ffffff65;
+    font-size: 1.3rem;
+}
+p{
+    font-size: 1.3rem;
+    color: #ffff;
+}
+.planetImg{
+    margin: 10%;
+}
+.planetNav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4%;
+    list-style-type: none;
+}
+.planetNav li{
+    padding-bottom: 5%;
+}
+.planetNav li p{
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 0.5mm;
+    font-size: 1.1rem;
+}
+.planet_name{
+    font-family: "Bellefair", serif;
+    font-size: 3.5rem;
+}
+.planet_about{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #D0D6F9;
+}
+.avg, .est {
+    font-family: "Barlow Condensed", sans-serif;
+    margin: 4%;
+    color: #D0D6F9;
+    font-size: 1.2rem;
+}
+.distance, .time{
+    font-family: "Bellefair", serif;
+    margin: 4%;
+    font-size: 2.3rem;
+}
+.desktop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.desktop_layout_two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer{
+    border-top: 1px solid white;
+    margin: 3%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_one, .footer_two{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@Media only screen and (min-width:750px) {
+    .planetCards_container{
+        padding: 4% 0;
+    }
+    .planetCards_title{
+        align-self: self-start;
+    }
+    .desktop_layout_two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .planetCards_contents{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 4%;
+        margin-bottom: 4%;
+    }
+    .planetImg{
+        margin:4% 0;
+        height: 350px;
+        width: 350px;
+    }
+    .planetNav li p{
+        font-size: 1.5rem;
+    }
+    .planet_name{
+        margin: 1% 0;
+        font-size: 9rem;
+    }
+    .footer{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+    }
+    .footer_one, .footer_two{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@Media only screen and (min-width: 1200px) {
+    .planetCards_title{
+        margin: 1%;
+    }
+    .planetCards_contents{       
+        margin-bottom: 1px;
+        padding-bottom: 1px;
+    }
+    .desktop{
+        flex-direction: row;
+        gap: 3%;
+    }
+    .desktop_layout_one{
+        padding: 1%;
+    }
+    .planetImg{
+        height: 400px;
+        width: 400px;
+    }
+    .desktop_layout_two{
+        align-items: flex-start;
+        width: 50%;
+    }
+    .planetNav{
+        padding: 0;
+        margin-left: 2%;
+    }
+    .planetNav li:hover::after{
+        width: 100%;
+    }
+    .planetNav li::after{
+        content: '';
+        width:0;
+        height: 3px;
+        left:0;
+        background:rgba(255, 255, 255, 0.611);
+        position:absolute;
+        bottom: 1px;
+        transition:0.5s;
+    }
+    .planetNav li{
+        position: relative;
+        display: inline;
+        /* outline: 1px solid red; */
+    }
+    .planetNav li p{
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .planet_name{
+        margin-left: 2%;
+        padding: 1px;
+        font-size: 4rem;
+    }
+    .planet_about{
+        text-align: left;
+        margin: 2%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .footer_one, .footer_two{
+        align-items: start;
+    }
+    .avg, .est{
+        font-size: .8rem;
+    }
+    .distance, .time{
+        font-size: 1.5rem;
+    }
+}
+@Media only screen and (min-width:1600px){
+    .planetImg{
+        height: 400px;
+        width: 400px;
+    }
+}

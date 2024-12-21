@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.crewCards_container_mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardTitle_mobile{
+    font-family: "Barlow Condensed", sans-serif;
+}
+.crew{
+    margin: 5% 0 0 0;
+}
+.img_crew_container{
+    margin: 2% 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+.crew_name{
+    margin: 4%;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: "Bellefair", serif;
+}
+.nav{
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    margin: 10% 0;
+    display: flex;
+    list-style-type: none;
+}
+.one, .two, .three, .four{
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 15px;
+    height: 15px;
+}
+.one:hover, .two:hover, .three:hover, .four:hover{
+    background-color: #979797;
+}
+.crew_title{
+    font-family: "Bellefair", serif;
+}
+.crew_about{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 0 10% 0;
+}
+.info_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    margin: 0 0 5% 0;
+}
+.crewCards_container_tab{
+    display: none;
+}
+@Media only screen and (min-width: 750px) {
+    .crewCards_container_mobile{
+        display: none;
+    }
+    .crewCards_container_tab{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardTitle_tab{
+        font-family: "Barlow Condensed", sans-serif;
+        align-self: self-start;
+    }
+    .tab_view{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_container_tab{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        align-items: center;
+    }
+    .tab_view_one{
+        margin: 3%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .crew_title_tab{
+        font-family: "Bellefair", serif;
+        color: #979797;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .crew_name_tab{
+        font-family: "Bellefair", serif;
+        text-align: center;
+        margin: 1%;
+        width: 100%;
+        font-size: 2rem;
+    }
+    .crew_about_tab{
+        width: 70%;
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 5%;
+    }
+    .nav_tab{
+        justify-content: center;
+        gap: 5%;
+        width: 100%;
+        margin: 5% 0;
+        display: flex;
+        list-style-type: none;
+    }
+}
+@Media only screen and (min-width: 1200px) {
+    .crewCards_container_tab{
+        margin: 2%;
+    }
+    .tab_view{
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+    }
+    .cardTitle_tab{
+        margin: 1%;
+        align-self: start;
+        justify-self: self-start;
+    }
+    .tab_view_one{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+        width: 70%;
+    }
+    .info_container_tab{
+        padding: 1%;
+        flex-direction: column;
+        align-items: start;
+    }
+    .nav_tab{
+        justify-content: start;
+        width: 40%;
+        margin: 5% 0 3% 3%;
+    }
+    .nav_tab li{
+        cursor: pointer;
+    }
+    .cardTitle_tab span{
+        font-size: 1.4rem;
+    }
+    .cardTitle_tab{
+        margin-left: 10%;
+        font-size: 1.4rem;
+    }
+    .crew_title_tab{
+        font-size: 2rem;
+    }
+    .crew_name_tab{
+        display: inline;
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 1% 3%;
+        text-align: left;
+        align-self: start;
+    }
+    .crew_about_tab{
+        padding: 0;
+        align-self: self-start;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+    .crew_tab{
+        margin: 0;
+        width: 450px;
+        height: 550px;
+    }
+}

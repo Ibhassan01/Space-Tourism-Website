@@ -1,0 +1,19 @@
+.technology_container{
+    padding: 3% 3% 5% 2%;
+    background-repeat: no-repeat;
+    background-image: url(/technology/background-technology-mobile.jpg);
+    background-size: 100% 100%;
+}
+@Media only screen and (min-width:750px) {
+    .technology_container{
+        padding: 0 0 0 3%;
+        background-image: url(/technology/background-technology-tablet.jpg);
+    }
+}
+@Media only screen and (min-width:1200px) {
+    .technology_container{
+        height: 100vh;
+        padding: 1% 2%;
+        background-image: url(/technology/background-technology-desktop.jpg);
+    }
+}

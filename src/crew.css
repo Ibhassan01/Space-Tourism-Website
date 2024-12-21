@@ -1,0 +1,23 @@
+.Crew_container{
+    overflow: scroll;
+    padding: 3% 4% 3% 1%;
+    background-repeat: no-repeat;
+    background-image: url(/crew/background-crew-mobile.jpg);
+    background-size: 100% 100%;
+}
+@Media only screen and (min-width:750px){
+    .Crew_container{
+        height: 100vh;
+        overflow: none;
+        padding: 0 0 0 3%;
+        background-image: url(/crew/background-crew-tablet.jpg);
+    }
+}
+@Media only screen and (min-width: 1200px) {
+    .Crew_container{
+        height: 100vh;
+        overflow: hidden;
+        padding: 1% 2%;
+        background-image: url(/crew/background-crew-desktop.jpg);
+    }
+}

@@ -1,0 +1,26 @@
+.destination_container{
+    padding: 5% 3% 5% 1%;
+    background-image: url(/destination/background-destination-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+@Media only screen and (min-width:750px) {
+    .destination_container{
+        padding: 0 0 0 3%;
+        background-image: url(/destination/background-destination-tablet.jpg);
+    }
+}
+@Media only screen and (min-width:1200px){
+    .destination_container{
+        height: 100vh;
+        padding: 1% 2%;
+        overflow-y: none;
+        background-image: url(../public/destination/background-destination-desktop.jpg);
+    }
+}
+@Media only screen and (min-width:2000px){
+    .destination_container{
+        padding: 30px;
+        background-image: url(../public/destination/background-destination-desktop.jpg);
+    }
+}
